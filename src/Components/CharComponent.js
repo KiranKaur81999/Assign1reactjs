@@ -1,9 +1,9 @@
 import React from 'react';
-import './csscomp.css';
+import classes from './csscomp.css';
 const CharComponent=(props)=>{
     return(
-    <div className='hello' onClick={props.click}>
-        <h5 >{props.ch}</h5>
+    <div className={classes.hello} onClick={props.click}>
+        <h5>{props.ch}</h5>
     </div>
     );
 }

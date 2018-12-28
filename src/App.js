@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
+//import './App.css';
+import classes from './App.css';
 import UserInput from './Input/UserInput.js';
 import UserOutput from './Input/UserOutput.js';
 import Validation from './Components/Validation.js';
@@ -33,9 +34,11 @@ DeleteHandler=(index)=>{
     
 render(){
     
+    
+    
  
     return(
-    <div>
+    <div className={classes.red}>
     <input type="text" onChange={this.changeListener}/>
     <p>Length: {this.state.Length}</p>
     <Validation length={this.state.Length} />
